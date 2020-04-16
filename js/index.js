@@ -17,9 +17,11 @@ function makeSizer(size) {
 //backgroundcolor del body con el color especificado. 
 //las variables abajo deberán recibir el retorno de la función 
 
-//function pintar(color) {
-// ...    
-//}
-//var paintRed = 
-//var paintBlue = 
+function pintar(color) {
+    return function() {
+      document.body.style.backgroundColor = color;
+    }   
+}
+var paintRed = pintar("red");
+var paintBlue = pintar("blue");
   
